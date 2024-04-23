@@ -16,6 +16,11 @@ function createItem(obj, parent, n) {
   img.alt = obj.recommend[1];
   var p = document.createElement("p");
   p.innerHTML = obj.recommend[1];
+
+  reco.addEventListener("click", function () {
+    window.open(obj.recommend[2]);
+  });
+
   reco.appendChild(img);
   reco.appendChild(p);
   wrap.appendChild(reco);
@@ -31,6 +36,9 @@ function createItem(obj, parent, n) {
     label.innerHTML = val[1];
     li.appendChild(icon);
     li.appendChild(label);
+    li.addEventListener("click", function () {
+      window.open(val[2]);
+    });
     if (index == n - 1) {
       li.className = "test";
       li.addEventListener("mouseover", function () {

@@ -3,9 +3,9 @@
 
   var historydata = [
     ["bing", "https://cn.bing.com/search?q="],
-    ["google", "https://www.google.com/#newwindow=1&safe=strict&q="],
+    ["google", "https://www.google.com/search?q="],
     ["douban", "https://www.douban.com/search?q="],
-    ["sinaweibo", "http://s.weibo.com/weibo/"],
+    ["sinaweibo", "https://s.weibo.com/weibo?q="],
     ["googleimage", "https://google.com/search?q="],
     ["pinterest", "http://pinterest.com/search/pins/?q="],
     ["twitter", "https://twitter.com/search?q="],
@@ -19,11 +19,11 @@
   var resource = [
     {
       header: "知识",
-      recommend: ["wikipedia.png", "维基百科"],
+      recommend: ["wikipedia.png", "维基百科", "https://zh.wikipedia.org"],
       content: [
-        ["zhihu.png", "知乎"],
-        ["quora.png", "Quora"],
-        ["baiduzhidao.png", "百度知道"],
+        ["zhihu.png", "知乎", "https://www.zhihu.com"],
+        ["quora.png", "Quora", "https://www.google.com"],
+        ["baiduzhidao.png", "百度知道", "https://twitter.com"],
         ["googlescholar.png", "Google学术"],
         ["Khan.png", "Khan Academy"],
         ["wikihow.png", "wikihow.png"],
