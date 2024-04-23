@@ -42,7 +42,7 @@ body {
   padding: 0 2em;
   color: inherit;
   font-size: 1.2rem;
-  background: url(img/searchicon.png) no-repeat right center #3f3f3f;
+  background: url(img/search.png) no-repeat right center #3f3f3f;
   border-radius: 30px;
 }
 #searchBox:focus {

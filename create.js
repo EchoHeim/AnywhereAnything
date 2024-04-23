@@ -12,7 +12,7 @@ function createItem(obj, parent, n) {
   var reco = document.createElement("div");
   reco.className = "recommend";
   var img = document.createElement("img");
-  img.src = "icon/" + obj.recommend[0];
+  img.src = "header/" + obj.recommend[0];
   img.alt = obj.recommend[1];
   var p = document.createElement("p");
   p.innerHTML = obj.recommend[1];
@@ -30,7 +30,26 @@ function createItem(obj, parent, n) {
   obj.content.map(function (val, index) {
     var li = document.createElement("li");
     var icon = document.createElement("img");
-    icon.src = "icon/" + val[0];
+    switch (obj.header) {
+      case "知识":
+        icon.src = "icon/knowledge/" + val[0];
+        break;
+      case "设计":
+        icon.src = "icon/design/" + val[0];
+        break;
+      case "社交":
+        icon.src = "icon/social/" + val[0];
+        break;
+      case "编程":
+        icon.src = "icon/code/" + val[0];
+        break;
+      case "音乐":
+        icon.src = "icon/music/" + val[0];
+        break;
+      case "视频":
+        icon.src = "icon/video/" + val[0];
+        break;
+    }
     icon.alt = val[1];
     var label = document.createElement("label");
     label.innerHTML = val[1];
@@ -55,12 +74,12 @@ function createItem(obj, parent, n) {
   parent.appendChild(item);
 }
 
-function createHistory(arr, ul) {
+function CreateSearch(arr, ul) {
   var keyword = document.querySelector("#searchBox");
   arr.map(function (val) {
     var li = document.createElement("li");
     var img = document.createElement("img");
-    img.src = "icon/" + val[0] + ".png";
+    img.src = "search/" + val[0];
     img.alt = val[0];
     li.appendChild(img);
     li.addEventListener("click", function () {
