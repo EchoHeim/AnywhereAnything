@@ -40,14 +40,26 @@ function createItem(obj, parent, n) {
       case "社交":
         icon.src = "icon/social/" + val[0];
         break;
+      case "购物":
+        icon.src = "icon/shopping/" + val[0];
+        break;
       case "编程":
         icon.src = "icon/code/" + val[0];
+        break;
+      case "图片":
+        icon.src = "icon/picture/" + val[0];
         break;
       case "音乐":
         icon.src = "icon/music/" + val[0];
         break;
       case "视频":
         icon.src = "icon/video/" + val[0];
+        break;
+      case "游戏":
+        icon.src = "icon/game/" + val[0];
+        break;
+      case "旅行":
+        icon.src = "icon/travel/" + val[0];
         break;
     }
     icon.alt = val[1];
