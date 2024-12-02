@@ -43,6 +43,15 @@ function createItem(obj, parent, n) {
       case "购物":
         icon.src = "icon/shopping/" + val[0];
         break;
+      case "新闻":
+        icon.src = "icon/news/" + val[0];
+        break;
+      case "书籍":
+        icon.src = "icon/books/" + val[0];
+        break;
+      case "论坛":
+        icon.src = "icon/forums/" + val[0];
+        break;
       case "编程":
         icon.src = "icon/code/" + val[0];
         break;
@@ -60,6 +69,15 @@ function createItem(obj, parent, n) {
         break;
       case "旅行":
         icon.src = "icon/travel/" + val[0];
+        break;
+      case "工具":
+        icon.src = "icon/tools/" + val[0];
+        break;
+      case "网络":
+        icon.src = "icon/net/" + val[0];
+        break;
+      case "其他":
+        icon.src = "icon/others/" + val[0];
         break;
     }
     icon.alt = val[1];
